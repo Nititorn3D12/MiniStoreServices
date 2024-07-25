@@ -27,14 +27,13 @@ const updateCustomer = async (req,res) => {
     try {
         const cust = await prisma.customers.update({
             data: {
-                customer_id,
                 first_name,
                 last_name,
                 address,
                 email,
                 phone_number
             },
-            where: { customer_id: Number(id)}
+            where: { customer_id: Number(customer_id)}
         });
         res.status(200).json(cust)
     } catch (err) {
