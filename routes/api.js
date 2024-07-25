@@ -163,7 +163,6 @@ module.exports = router;
  *       500:
  *         description: Internal server error.
  */
-
 /**
  * @swagger
  * /api/v1/customers/{id}:
